@@ -11,8 +11,8 @@ var CONTAINER_ID = 'v3d-container';
     var params = v3d.AppUtils.getPageParams();
 
     var PUZZLES_DIR = '/puzzles/';
-    var logicURL = params.logic ? params.logic : '__LOGIC__visual_logic.js'.replace('__LOGIC__', '');
-    var sceneURL = params.load ? params.load : '__URL__test_cube_four.gltf'.replace('__URL__', '');
+    var logicURL = params.logic ? params.logic : 'https://cdn.jsdelivr.net/gh/redpanther-io/testnumbertwo/visual_logic.js';
+    var sceneURL = params.load ? params.load : 'https://cdn.jsdelivr.net/gh/redpanther-io/testnumbertwo/test_cube_four.gltf';
     if (!sceneURL) {
         console.log('No scene URL specified');
         return;
